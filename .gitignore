@@ -11,6 +11,7 @@ build/
 # Environments
 venv/
 .env
+venv311/
 
 # Data
 data/
