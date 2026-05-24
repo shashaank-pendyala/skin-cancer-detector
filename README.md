@@ -60,6 +60,7 @@ Grad-CAM to visually explain its predictions.
 
 ## Project Structure
 
+```
 skin-cancer-detector/
 ├── training/          # Kaggle training notebook
 ├── model/             # Model weights (not tracked by git)
@@ -67,8 +68,14 @@ skin-cancer-detector/
 │   ├── plots/         # Training curves, confusion matrix
 │   ├── gradcam/       # Grad-CAM visualizations
 │   └── metrics/       # Classification report, training history
-├── app/               # Flask web application (coming soon)
-└── notebooks/         # EDA and experiments
+├── app/               # Flask web application
+│   ├── app.py
+│   ├── templates/
+│   └── static/
+├── notebooks/         # EDA and experiments
+├── requirements.txt
+└── README.md
+```
 
 ## Known Limitations
 
