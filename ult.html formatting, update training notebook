@@ -1,0 +1,38 @@
+[1mdiff --git a/app/templates/result.html b/app/templates/result.html[m
+[1mindex 0a02e74..96810f8 100644[m
+[1m--- a/app/templates/result.html[m
+[1m+++ b/app/templates/result.html[m
+[36m@@ -68,19 +68,19 @@[m
+                             <div class="col-md-6">[m
+                                 <p class="text-muted small fw-semibold mb-2">UPLOADED IMAGE</p>[m
+                                 <img src="{{ result.image_url }}"[m
+[31m-                                     class="img-fluid rounded result-image" alt="Uploaded image">[m
+[32m+[m[32m                                    class="img-fluid rounded result-image" alt="Uploaded image">[m
+                             </div>[m
+                             <div class="col-md-6">[m
+                                 <p class="text-muted small fw-semibold mb-2">[m
+                                     GRAD-CAM HEATMAP[m
+                                     <span class="ms-1" data-bs-toggle="tooltip"[m
+[31m-                                          title="Red areas show where the model focused its attention">[m
+[32m+[m[32m                                        title="Red areas show where the model focused its attention">[m
+                                         <i class="fas fa-circle-info text-muted"></i>[m
+                                     </span>[m
+                                 </p>[m
+                                 {% if result.gradcam_url %}[m
+                                 <img src="{{ result.gradcam_url }}"[m
+[31m-                                     class="img-fluid rounded result-image" alt="Grad-CAM heatmap">[m
+[32m+[m[32m                                    class="img-fluid rounded result-image" alt="Grad-CAM heatmap">[m
+                                 <p class="text-muted small mt-2">[m
+                                     <i class="fas fa-fire text-danger me-1"></i>[m
+                                     Red = high attention &nbsp;[m
+[36m@@ -116,8 +116,8 @@[m
+                             </div>[m
+                             <div class="progress" style="height: 10px;">[m
+                                 <div class="progress-bar {% if loop.first %}bg-primary{% else %}bg-secondary{% endif %}"[m
+[31m-                                     role="progressbar"[m
+[31m-                                     style="width: {{ pred.confidence }}%">[m
+[32m+[m[32m                                    role="progressbar"[m
+[32m+[m[32m                                    style="width: {{ pred.confidence }}%">[m
+                                 </div>[m
+                             </div>[m
+                         </div>[m
