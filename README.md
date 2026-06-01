@@ -102,7 +102,7 @@ python app.py
 
 ## Tech Stack
 
-- Python 3.12
+- Python 3.11
 - TensorFlow 2.19 / Keras
 - EfficientNetB0 (ImageNet pretrained)
 - Flask
